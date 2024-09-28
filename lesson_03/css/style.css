@@ -1,0 +1,77 @@
+@import url("reset.css");
+
+* {
+	color: black;
+}
+
+header a {
+	color: brown;
+}
+
+.menu-item.item-contacts .menu-link {
+	color: green;
+}
+
+h1 {
+	color: yellow;
+}
+
+.main-title > span {
+	color: blue;
+}
+
+#about-nature {
+	color: darkgreen;
+}
+
+#about-culture {
+	color: darkblue;
+}
+
+#about-kitchen {
+	color: darkred;
+}
+
+main p {
+	color: slategrey;
+}
+
+.title-nature + p {
+	color: darkorange;
+}
+
+.title-culture ~ p {
+	color: darkmagenta;
+}
+
+ul.list-nature > li {
+	color: darkcyan;
+}
+
+li span {
+	color: darkgoldenrod;
+}
+
+.list-kitchen-sublist-item {
+	color: coral;
+}
+
+.container-contacts * {
+	color: blueviolet;
+}
+
+[class*="author"] {
+	color: brown;
+}
+
+h3.title-contacts {
+	color: deeppink;
+}
+
+li > a.link-contacts {
+	color: darkslategray;
+}
+
+.copyright {
+	color: darkslateblue;
+}
