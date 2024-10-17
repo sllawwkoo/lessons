@@ -1,0 +1,481 @@
+/* Підключення фрифтів */
+
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:regular,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Epilogue&display=swap");
+
+/* Локальне підключення шрифтів */
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	background: url("../img/bg.jpg") center / cover no-repeat fixed;
+}
+
+.header {
+	margin-bottom: 50px;
+}
+
+.container-header {
+	padding-block: 50px 0;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.main-title {
+	font-size: 44px;
+	font-weight: 700;
+	text-align: center;
+	color: #dd6b14;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	text-shadow: 2px 2px 10px #2c1901;
+}
+
+.menu {
+	margin: 0 auto;
+	text-align: center;
+	padding-block: 40px;
+}
+
+.menu__item {
+	display: inline-block;
+	font-size: 24px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	color: #8a3d03;
+	border: 2px solid rgb(204, 149, 106);
+	padding: 40px 50px;
+}
+
+.menu__item:hover {
+	color: #f06a04;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.menu__item:nth-child(odd) {
+	border-radius: 13% 87% 0% 100% / 46% 60% 40% 54%;
+	box-shadow: -2px 2px 10px #2c1901;
+}
+
+.menu__item:nth-child(odd):hover {
+	box-shadow: -2px 2px 4px #2c1901;
+}
+
+.menu__item:nth-child(even) {
+	border-radius: 82% 18% 99% 1% / 52% 45% 55% 48%;
+	box-shadow: 2px 2px 10px #2c1901;
+}
+
+.menu__item:nth-child(even):hover {
+	box-shadow: 2px 2px 4px #2c1901;
+}
+
+.menu__item:first-child {
+	background-color: blanchedalmond;
+}
+.menu__item:nth-child(2) {
+	background-color: burlywood;
+}
+.menu__item:nth-child(3) {
+	background-color: antiquewhite;
+}
+.menu__item:last-child {
+	background-color: beige;
+}
+
+.container-footer {
+	padding-block: 50px;
+}
+
+.copyright {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: darkblue;
+	letter-spacing: 5px;
+	line-height: 2.5;
+	text-shadow: 1px 1px 7px darkorange;
+}
+
+/* Макети */
+
+/* Макет №1 */
+.timeline {
+	font-family: "DM Sans", sans-serif;
+	margin-inline: auto;
+	margin-block: 0 100px;
+	background: #ffffff;
+}
+
+.timeline-container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.timeline-body {
+	padding-block: 100px;
+}
+.timeline-item:not(:last-child) {
+	margin-bottom: 54px;
+}
+.timeline-circle {
+	display: inline-block;
+	display: inline-block;
+	width: 218px;
+	height: 218px;
+	text-align: center;
+	background-color: rgba(74, 58, 255, 0.1);
+	border-radius: 50%;
+	color: #4a3aff;
+	text-align: center;
+	font-size: 88px;
+	font-weight: 700;
+	padding: 61px 53px;
+	line-height: 1.07;
+	margin-right: 37px;
+	vertical-align: middle;
+}
+.timeline-content {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 630px;
+}
+
+.timeline-content > *:not(:last-child) {
+	margin-bottom: 8px;
+}
+.timeline-date {
+	display: inline-block;
+	color: #4a3aff;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+.timeline-title {
+	color: #1e1b39;
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1.28;
+}
+
+.timeline-title::after {
+	content: "";
+	width: 43px;
+	height: 43px;
+}
+
+.timeline-item:first-child .timeline-title::after {
+	background: url("../img/search.png") center / 43px no-repeat;
+}
+
+.timeline-item:nth-child(2) .timeline-title::after {
+	background: url("../img/laptop.png") center / 43px no-repeat;
+}
+
+.timeline-item:last-child .timeline-title::after {
+	background: url("../img/rocket.png") center / 43px no-repeat;
+}
+
+.timeline-description {
+	color: #6e6c83;
+	font-size: 24px;
+	line-height: 1.75;
+}
+
+/* Макет №2 */
+.pricing {
+	font-family: "DM Sans", sans-serif;
+	font-weight: 700;
+	margin-inline: auto;
+	margin-block: 0 100px;
+	background: #ffffff;
+	padding: 80px 15px;
+}
+
+.pricing-container {
+	max-width: 544px;
+	margin: 0 auto;
+	border-radius: 56px;
+	background: #f0f0f6;
+	padding: 24px 24px 58px;
+}
+.pricing-info {
+	border-radius: 34px;
+	background-color: #4a3aff;
+	text-align: center;
+	padding: 45px;
+	color: #ffffff;
+	margin-bottom: 34px;
+}
+.pricing-title {
+	font-size: 30px;
+	line-height: 1.06;
+	margin-bottom: 2px;
+	opacity: 0.9;
+}
+.pricing-cost {
+	font-size: 116px;
+	line-height: 1.03;
+	margin-bottom: 6px;
+}
+.pricing-description {
+	font-size: 20px;
+	line-height: 1.1;
+	opacity: 0.6;
+}
+
+.pricing-list-item {
+	color: #1e1b39;
+	font-size: 28px;
+	line-height: 1.36;
+}
+
+.pricing-list-item:not(:last-child) {
+	margin-bottom: 26px;
+}
+
+.pricing-list-item::before {
+	content: "";
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: url(../img/check-icon.png) center / 100% no-repeat;
+	vertical-align: middle;
+	margin-right: 14px;
+}
+
+/* Макет №3 */
+.agency {
+	background: #fdf0e9;
+	padding: 80px 0;
+	margin-block: 0 100px;
+}
+
+.agency-container {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.agency-image {
+	margin-inline: auto;
+	margin-block-end: 74px;
+	max-width: 970px;
+}
+
+.agency-image img {
+	max-width: 100%;
+}
+
+.agency-inner-container {
+	max-width: 570px;
+	margin: 0 auto;
+	font-family: "Epilogue", sans-serif;
+}
+
+.agency-about {
+	margin-bottom: 51px;
+}
+.agency-title {
+	font-size: 20px;
+	color: #391400;
+	line-height: 1.6;
+	margin-bottom: 32px;
+}
+.agency-description {
+	font-size: 16px;
+	color: rgba(57, 20, 0, 0.64);
+	line-height: 2;
+}
+
+.agency-content {
+	margin-bottom: 65px;
+	color: #391400;
+}
+.agency-content-title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.33;
+	margin-bottom: 35px;
+}
+.agency-content-text {
+	font-size: 16px;
+	line-height: 2;
+	color: rgba(57, 20, 0, 0.64);
+}
+
+.agency-content-text:not(:last-child) {
+	margin-bottom: 34px;
+}
+
+.agency-content-list {
+	margin-bottom: 32px;
+}
+.agency-content-list-item {
+	font-size: 16px;
+	line-height: 2;
+}
+
+ul.agency-content-list .agency-content-list-item::before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #ef6d58;
+	margin-right: 16px;
+	margin-bottom: 1px;
+}
+
+.agency-quotes {
+	margin-bottom: 76px;
+	font-size: 20px;
+	line-height: 1.6;
+	color: #391400;
+	border-radius: 6px;
+	background: #f9e5da;
+	padding: 42px 32px 32px 32px;
+}
+.agency-quotes-text {
+	padding-left: 80px;
+	background: url("../img/double-quotes-up.png") 0 0 / 48px no-repeat;
+}
+
+.agency-resume {
+	font-size: 16px;
+	line-height: 2;
+	color: rgba(57, 20, 0, 0.64);
+}
+
+/* Game */
+.game {
+	/* background: #ffffff; */
+	background: rgb(20, 27, 19) linear-gradient(90deg, rgba(20, 27, 19, 1) 0%, rgba(111, 113, 48, 1) 14%, rgba(179, 218, 225, 1) 30%, rgba(99, 127, 131, 1) 76%, rgba(91, 96, 40, 1) 91%, rgba(20, 27, 19, 1) 100%);
+	padding: 80px 0;
+}
+.game-container {
+	max-width: 1400px;
+	height: 700px;
+	margin: 0 auto;
+	padding: 30px;
+	background: url("../img/river_banks.jpg") center / cover no-repeat;
+	border-radius: 20px;
+	box-shadow: 0 0 20px 25px rgba(0, 0, 0, 0.8);
+}
+.game-body {
+	max-width: 1300px;
+	height: 640px;
+	margin: 0 auto;
+}
+.game-bart {
+	width: 180px;
+	height: 180px;
+	margin-left: 34%;
+	margin-top: -2%;
+}
+
+.game-bart img {
+	width: 100%;
+	height: 100%;
+}
+
+.game-bart:hover ~ .bridges-list > .bridges-list-item:first-child {
+	visibility: visible;
+}
+
+.bridges-list-item:hover + .bridges-list-item,
+.bridges-list-item:hover {
+	visibility: visible;
+}
+
+.bridges-list:has(.bridge-9:hover) ~ .game-gomer-finish {
+	visibility: visible;
+}
+
+.bridges-list-item {
+	visibility: hidden;
+}
+
+.bridges-list-item:nth-child(odd) {
+	background: url("../img/bridge_h.png") center / 100% no-repeat;
+}
+
+.bridges-list-item:nth-child(even) {
+	background: url("../img/bridge_v.png") center / cover no-repeat;
+}
+
+.bridge-1 {
+	width: 140px;
+	height: 85px;
+	margin-left: 47%;
+	margin-top: -7%;
+}
+.bridge-2 {
+	width: 70px;
+	height: 140px;
+	margin-left: 52%;
+	margin-top: -2%;
+}
+.bridge-3 {
+	width: 381px;
+	height: 48px;
+	margin-left: 28%;
+	margin-top: -1%;
+}
+.bridge-4 {
+	width: 53px;
+	height: 80px;
+	margin-left: 28%;
+	margin-top: -1%;
+}
+.bridge-5 {
+	width: 381px;
+	height: 48px;
+	margin-left: 2.5%;
+	margin-top: -1%;
+}
+.bridge-6 {
+	width: 50px;
+	height: 265px;
+	margin-left: 3%;
+	margin-top: -0.5%;
+}
+.bridge-7 {
+	width: 500px;
+	height: 48px;
+	margin-left: 6%;
+	margin-top: -4%;
+}
+.bridge-8 {
+	width: 60px;
+	height: 136px;
+	margin-left: 40%;
+	margin-top: -14%;
+}
+.bridge-9 {
+	width: 418px;
+	height: 48px;
+	margin-left: 40%;
+	margin-top: -14%;
+}
+.game-gomer-finish {
+	width: 250px;
+	height: 250px;
+	margin-top: -20%;
+	margin-left: 68%;
+	visibility: hidden;
+}
+
+.game-gomer-finish img {
+	width: 100%;
+	height: 100%;
+}
