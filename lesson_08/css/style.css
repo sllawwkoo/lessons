@@ -1,0 +1,221 @@
+/* Підключення фрифтів */
+
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Afacad+Flux:regular,700&display=swap");
+
+/* Локальне підключення шрифтів */
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	background: url("../img/bg.jpg") center / cover no-repeat fixed;
+}
+
+.header {
+	margin-bottom: 50px;
+	font-family: "Afacad Flux", sans-serif;
+}
+
+.header-container {
+	padding-block: 50px 0;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.header-title {
+	font-size: 44px;
+	font-weight: 700;
+	text-align: center;
+	color: darkblue;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	text-shadow: 2px 2px 10px darkorange;
+}
+
+.footer-container {
+	padding-block: 50px;
+}
+
+.footer-container {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: darkblue;
+	letter-spacing: 5px;
+	line-height: 2.5;
+	text-shadow: 1px 1px 7px darkorange;
+}
+
+/* HomeWork */
+main {
+	background-color: #fdf0e9;
+}
+
+.container {
+	max-width: 1290px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.images-container {
+	font-family: "Afacad Flux", sans-serif;
+	font-size: 0;
+	margin-inline: -20px;
+}
+
+.images-item {
+	display: inline-block;
+	padding: 20px;
+	width: 33.333%;
+	font-size: 20px;
+	vertical-align: top;
+}
+
+/* Content Images */
+.item-content {
+	background-color: #ef9d59cc;
+	text-align: center;
+	padding: 15px 5px;
+	border-radius: 20px;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.item-content > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.item-content-title {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+}
+
+.item-content-image {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.item-content-image:hover {
+	box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.item-content-image img {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.item-content-image:first-of-type img,
+.item-content-image:nth-of-type(2) img {
+	border-radius: 10px;
+}
+
+.item-content-image:nth-of-type(3) img {
+	max-width: 147px;
+}
+
+.item-content-image:nth-of-type(4) img {
+	max-width: 108px;
+}
+
+.item-content-image:nth-of-type(5) img {
+	max-width: 119px;
+}
+
+.item-content-image:nth-of-type(6) img {
+	max-width: 86px;
+}
+
+.item-content-image:nth-of-type(7) img {
+	max-width: 126px;
+}
+
+/* Design Images */
+.item-design {
+	background-color: #ff841fcc;
+	text-align: center;
+	padding: 15px 5px;
+	border-radius: 20px;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.item-design > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.item-design-title {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+}
+
+.item-design-image {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.item-design-image:hover {
+	box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.item-design-image img {
+	width: 100%;
+	max-width: 282px;
+	margin-bottom: 10px;
+}
+
+/* Icons */
+.item-icon {
+	background-color: #ffba82cc;
+	text-align: center;
+	padding: 15px 5px;
+	border-radius: 20px;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+}
+
+.item-icon > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.item-icon-title {
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+}
+
+.item-icon-image {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.item-icon-image:hover {
+	box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.item-icon-image img {
+	width: 100%;
+	max-width: 148px;
+	margin-bottom: 10px;
+}
+
+.item-icon-image:first-of-type img,
+.item-icon-image:nth-of-type(2) img,
+.item-icon-image:nth-of-type(3) img {
+	max-width: 100px;
+}
+
+.item-icon-image:nth-of-type(6) img {
+	max-width: 70px;
+}
+
+.item-icon-image:nth-of-type(7) img,
+.item-icon-image:last-of-type img {
+	max-width: 100px;
+}
