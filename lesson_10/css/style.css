@@ -1,0 +1,245 @@
+/* Підключення фрифтів */
+
+/* Google Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900&display=swap");
+
+/* Локальне підключення шрифтів */
+
+/* Скидання стилів */
+@import url("reset.css");
+
+/* Основні стилі */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	background: url("../img/bg.jpg") center / cover no-repeat fixed;
+}
+
+.header--margin {
+	margin-bottom: 50px;
+}
+
+.header__container {
+	padding-block: 50px 0;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.header__title {
+	font-size: 44px;
+	font-weight: 700;
+	text-align: center;
+	color: darkblue;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	text-shadow: 2px 2px 10px darkorange;
+}
+
+.footer__container {
+	padding-block: 50px;
+}
+
+.footer__container {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: darkblue;
+	letter-spacing: 5px;
+	line-height: 2.5;
+	text-shadow: 1px 1px 7px darkorange;
+}
+
+/* HomeWork */
+.page > *:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.studio {
+	background-color: #28293e;
+	padding-block: 50px;
+	padding-inline: 30px;
+}
+
+.studio__container {
+	max-width: 570px;
+	margin: 0 auto;
+}
+
+.picture {
+	min-height: 602px;
+	width: 100%;
+	position: relative;
+}
+
+.picture__img--circle {
+	width: 370px;
+	height: 370px;
+	border-radius: 50%;
+	background: #32334c;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+.picture__img--laptop {
+	width: 246px;
+	height: 306px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #b550f8;
+	border-radius: 50% 50% 8px 8px;
+}
+
+.picture__img--laptop img {
+	position: absolute;
+	bottom: 16px;
+	left: 21px;
+}
+.picture__img--stars {
+	position: absolute;
+	top: 40px;
+	right: 154px;
+	width: 112px;
+	height: 112px;
+	border-radius: 50%;
+	background: #ef6d58;
+}
+
+.picture__img--stars img {
+	position: absolute;
+	top: 28px;
+	left: 35px;
+}
+
+.picture__img--cloud {
+	position: absolute;
+	right: 0;
+	top: 80px;
+}
+.picture__img--girl {
+	position: absolute;
+	right: 0;
+	bottom: 108px;
+	width: 245px;
+	height: 306px;
+	background: #f7cc47;
+	border-radius: 50% 50% 8px 8px;
+}
+
+.picture__img--girl img {
+	position: absolute;
+	bottom: -1px;
+	right: 0;
+}
+
+.picture__img--arrow {
+	position: absolute;
+	right: 162px;
+	bottom: 0;
+}
+.picture__img--card {
+	position: absolute;
+	left: 56px;
+	bottom: 59px;
+}
+.picture__img--spiral {
+	position: absolute;
+	left: 0;
+	bottom: 188px;
+}
+
+/* Portfolio */
+.portfolio {
+	background-color: #28293e;
+	padding-block: 50px;
+}
+
+.portfolio__container {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.portfolio__works {
+}
+.works {
+}
+.works__columns {
+	font-size: 0;
+	margin: 0 -16px;
+	border: 1px solid #3a3c56;
+	overflow: hidden;
+}
+.works__inner-cintainer {
+	margin: 0px -1px -1px 0px;
+}
+.works__column {
+	width: 33.333%;
+	padding: 16px;
+	vertical-align: top;
+	border: 1px solid #3a3c56;
+}
+.works__item {
+	position: relative;
+}
+
+.works__item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3181;
+	background-color: #5c2000;
+	transition: all 0.3s ease;
+}
+
+.works__item:hover::before {
+	opacity: 0.2;
+}
+
+.works__item:hover .works__info {
+	left: 60px;
+}
+
+.works__item:hover .works__label {
+	background-color: #EF6D58;
+	color: #ffffff;
+}
+
+.works__item:hover .works__title {
+	text-shadow: 0 0 10px #EF6D58;
+}
+
+
+.works__item img {
+	width: 100%;
+}
+.works__info {
+	position: absolute;
+	left: 48px;
+	bottom: 51px;
+	transition: all 0.3s ease;
+}
+.works__label {
+	display: inline-block;
+	color: #391400;
+	font-size: 16px;
+	line-height: 1;
+	background: #ffffff;
+	padding: 11px 16px;
+	border-radius: 20px;
+	margin-bottom: 24px;
+	text-transform: capitalize;
+	transition: all 0.3s ease;
+}
+
+.works__title {
+	color: #ffffff;
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
