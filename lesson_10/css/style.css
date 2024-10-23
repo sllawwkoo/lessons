@@ -88,7 +88,8 @@
 	top: 0;
 	left: 0;
 	background: #b550f8;
-	border-radius: 50% 50% 8px 8px;
+	/* border-radius: 50% 50% 8px 8px; */
+	border-radius: 120px 120px 8px 8px;
 }
 
 .picture__img--laptop img {
@@ -124,19 +125,21 @@
 	width: 245px;
 	height: 306px;
 	background: #f7cc47;
-	border-radius: 50% 50% 8px 8px;
+	/* border-radius: 50% 50% 8px 8px; */
+	border-radius: 120px 120px 8px 8px;
 }
 
 .picture__img--girl img {
 	position: absolute;
 	bottom: -1px;
 	right: 0;
+	max-width: 246px;
 }
 
 .picture__img--arrow {
 	position: absolute;
 	right: 162px;
-	bottom: 0;
+	bottom: 24px;
 }
 .picture__img--card {
 	position: absolute;
@@ -219,7 +222,8 @@
 }
 .works__info {
 	position: absolute;
-	left: 48px;
+	/* left: 48px; */
+	inset-inline: 48px;
 	bottom: 51px;
 	transition: all 0.3s ease;
 }
