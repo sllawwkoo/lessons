@@ -34,6 +34,10 @@ body {
 	padding: 0 15px;
 }
 
+.open-menu body {
+	overflow: hidden;
+}
+
 /*** Header ***/
 
 .header {
@@ -94,7 +98,7 @@ body {
 		z-index: 5;
 		overflow: auto;
 		padding: 100px 15px 30px;
-		background-color: #ef6d58;
+		background-color: #28293e;
 		transition: inset-inline-start 0.3s ease;
 	}
 
@@ -181,7 +185,7 @@ body {
 	row-gap: 3px;
 }
 
-.action-header__button {
+.actions-header__button {
 	text-align: center;
 	border-radius: 6px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -195,7 +199,7 @@ body {
 }
 
 @media (any-hover: hover) {
-	.action-header__button:hover {
+	.actions-header__button:hover {
 		background-color: #fff;
 		color: #391400;
 		border: 1px solid #fff;
@@ -203,7 +207,7 @@ body {
 }
 
 @media (max-width: 479.98px) {
-	.action-header__button {
+	.actions-header__button {
 		display: none;
 	}
 }
@@ -367,7 +371,7 @@ body {
 	text-transform: uppercase;
 }
 .hero__title {
-	font-size: clamp(56px, 5vw, 72px);
+	font-size: clamp(56px, 6vw, 72px);
 	font-weight: 800;
 	line-height: 1.11;
 	letter-spacing: -2px;
@@ -468,6 +472,7 @@ body {
 .hero__image {
 	flex: 1 1 49%;
 	aspect-ratio: 570 / 602;
+	max-width: 570px;
 }
 
 @media (max-width: 1199.98px) {
@@ -478,6 +483,8 @@ body {
 
 .hero__image img {
 	width: 100%;
+	height: 100%;
+	object-fit:cover;
 }
 
 .hero__quote {
