@@ -1,0 +1,334 @@
+/*========================== BUTTON ============================*/
+
+.button {
+	text-align: center;
+	border-radius: 0.25rem;
+	background-color: var(--purple-main);
+	color: var(--absolute-white);
+	font-weight: 600;
+	line-height: 1.5;
+	text-transform: capitalize;
+	padding: 0.625rem 1.5rem;
+	border: 0.0625rem solid var(--purple-main);
+	transition: all 0.5s;
+	position: relative;
+	z-index: 5;
+}
+
+@media (any-hover: hover) {
+	.button:hover {
+		background-color: var(--purple-50);
+		border: 0.0625rem solid var(--purple-main);
+		color: var(--blue-dark);
+		box-shadow: 0px 0.25rem 0.625rem var(--purple-main);
+	}
+
+	.button--before:hover::before {
+		background: url("../img/icons/download_dark_icon.svg") center center/contain no-repeat;
+	}
+
+	.button--white-after:hover::after,
+	.button--after:hover::after {
+		background: url("../img/icons/arrow_dark_after_icon.svg") center center/contain no-repeat;
+	}
+
+	.button--white-after:hover {
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+}
+
+.button--transparent {
+	background-color: var(--absolute-white);
+	color: var(--purple-main);
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.75rem;
+	justify-content: center;
+}
+
+.button--white-after {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.75rem;
+	justify-content: center;
+	transition: 0.5s;
+}
+
+.button--before::before {
+	content: "";
+	background: url("../img/icons/download_purple_icon.svg") center center/contain no-repeat;
+	width: 1.5rem;
+	aspect-ratio: 1;
+	transition: 0.5s;
+}
+
+.button--after::after {
+	content: "";
+	background: url("../img/icons/arrow_puple_after_icon.svg") center center/contain no-repeat;
+	width: 0.75rem;
+	aspect-ratio: 1;
+	transition: 0.5s;
+}
+
+.button--white-after::after {
+	content: "";
+	background: url("../img/icons/arrow_white_after_icon.svg") center center/contain no-repeat;
+	width: 0.75rem;
+	aspect-ratio: 1;
+	transition: 0.5s;
+}
+
+.button--form {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+}
+
+.button--form:hover svg path {
+	fill: var(--purple-main);
+}
+
+@media (min-width: 40.625rem) {
+	.button {
+		align-self: flex-start;
+	}
+
+	.button--form {
+		width: fit-content;
+	}
+}
+@media (max-width: 56.25em) {
+	.button--transparent {
+		padding-inline: 0.625rem;
+	}
+}
+
+svg path {
+	transition: all 0.3s;
+}
+
+/*========================== SECTION-HEADER ============================*/
+.section-header {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.section-header__title {
+	color: var(--blue-dark);
+	font-size: 1.875rem;
+	font-weight: 600;
+	line-height: 1.31;
+}
+
+.section-header__title--small-fz {
+	font-size: 1.4375rem; /*  23 */
+}
+
+.section-header__title--white {
+	color: var(--absolute-white);
+}
+
+.section-header__main-title {
+	color: var(--blue-dark);
+	font-size: 1.875rem;
+	line-height: 1.16;
+	font-weight: 600;
+}
+
+.section-header__title--center,
+.section-header__text--center {
+	text-align: center;
+	max-width: 36.0625rem;
+	width: 100%;
+	margin-inline: auto;
+}
+
+.section-header__title--width {
+	max-width: 38.8125rem;
+}
+
+.section-header__title--color {
+	color: var(--grey-90);
+}
+
+@media (min-width: 25em) {
+	.section-header__title {
+		font-size: 2.1875rem;
+	}
+
+	.section-header__title--small-fz {
+		font-size: 1.5625rem;
+	}
+
+	.section-header__main-title {
+		font-size: 2.375rem; /* 38 */
+	}
+}
+
+@media (min-width: 46.875em) {
+	.section-header__main-title {
+		font-size: 3.125rem;
+	}
+
+	.section-header__title {
+		font-size: 2.5rem;
+	}
+
+	.section-header__title--small-fz {
+		font-size: 1.875rem;
+	}
+}
+
+@media (min-width: 68.75em) {
+	.section-header__main-title {
+		font-size: 4.5rem;
+	}
+
+	.section-header__title {
+		font-size: 3rem;
+	}
+
+	.section-header__title--small-fz {
+		font-size: 2.375rem;
+	}
+}
+
+.section-header__text {
+	color: var(--grey-60);
+	font-size: 1rem;
+	line-height: 1.13;
+}
+
+.section-header__text--light {
+	color: var(--grey-35);
+}
+
+.section-header__text--color-medium {
+	color: var(--grey-50);
+}
+
+.section-header__text--color-light {
+	color: var(--grey-40);
+}
+
+@media (min-width: 25em) {
+	.section-header__text {
+		font-size: 1.125rem;
+	}
+}
+
+.section-header__text p:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.section-header__text span {
+	color: var(--blue-dark);
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+	position: relative;
+}
+
+.section-header__text span::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0.333333em; /* 6/18 */
+	bottom: 0.111111em; /* 2/18 */
+	left: 0;
+	background-color: var(--red-05);
+	z-index: -1;
+}
+
+.section-header__links {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.section-header__links .button {
+	width: 100%;
+}
+
+@media (min-width: 48.75em) {
+	.section-header__links {
+		flex-direction: row;
+		align-items: center;
+	}
+	.section-header__links .button {
+		width: auto;
+	}
+}
+
+.section-header__link {
+	display: grid;
+}
+
+@media (min-width: 40.625em) {
+	.section-header__link {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/*========================== SOCIALS ============================*/
+
+.socials {
+	border-radius: 0.25rem;
+}
+.socials__list {
+	display: inline-flex;
+	align-items: center;
+}
+
+.socials__link {
+	width: 3rem;
+	aspect-ratio: 1;
+	padding: 0.9375rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s;
+}
+
+.socials__link svg {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@media (any-hover: hover) {
+	.socials__link:hover {
+		background-color: var(--purple-main);
+	}
+
+	.socials__link:hover svg path {
+		fill: var(--absolute-white);
+	}
+}
+
+/*========================== PAGINATION ============================*/
+
+.pagination {
+	display: flex;
+	gap: 0.75rem;
+	align-items: center;
+	justify-content: center;
+}
+.pagination__dot {
+	width: 0.5rem;
+	border-radius: 50%;
+	aspect-ratio: 1;
+	background-color: var(--grey-20);
+	transition:
+		background-color 0.5s,
+		border-radius 0.5s;
+	will-change: background-color, border-radius;
+}
+.pagination__dot:hover {
+	width: 1.875rem;
+	height: 0.5rem;
+	border-radius: 6.25rem;
+	background: var(--purple-100);
+}
